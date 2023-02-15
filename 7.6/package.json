@@ -1,14 +1,27 @@
 {
-  "name": "cypress-test",
+  "name": "7.6-cypress1",
   "version": "1.0.0",
-  "description": "first tests with Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:cypress": "cypress open --browser chrome",
+    "test:allHeaded": "cypress run --headed --browser chrome",
+    "test:allHeadless": "npx cypress run --headless -b chrome",
+    "test:allHeadedEdge": "cypress run --headed --browser edge",
+    "test:spec": "cypress run --headed --browser edge --spec cypress/e2e/booksAdd.cy.js",
+    "ChromeMobile": "npx cypress run --browser chrome --headed --config-file cypress.env.js"
   },
-  "author": "OM",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^8.3.0"
-  }
+    "cypress": "^10.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orlov94/7.6Cypress1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Orlov94/7.6Cypress1/issues"
+  },
+  "homepage": "https://github.com/Orlov94/7.6Cypress1#readme",
+  "description": ""
 }
